@@ -5,5 +5,6 @@ steps:
 - name: test
   image: golang:1.12
   commands:
-  - go build -v
-  - go test -v -race -coverprofile=coverage.txt -covermode=atomic
+  - cd xorm
+  - go build -v -mod=vendor
+  - go test -v -mod=vendor -race -coverprofile=coverage.txt -covermode=atomic
