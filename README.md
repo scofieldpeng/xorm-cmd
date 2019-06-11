@@ -1,5 +1,5 @@
 
-[中文](https://github.com/go-xorm/cmd/blob/master/README_CN.md)
+[中文](https://gitea.com/xorm/cmd/blob/master/README_CN.md)
 
 # xorm tools
 
@@ -7,7 +7,7 @@ xorm tools is a set of  tools for database operation.
 
 ## Source Install
 
-`go get github.com/go-xorm/cmd/xorm`
+`go get gitea.com/xorm/cmd/xorm`
 
 and you should install the depends below:
 
