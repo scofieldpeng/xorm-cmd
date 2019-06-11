@@ -273,7 +273,7 @@ func runReverse(cmd *Command, args []string) {
 				source, err = langTmpl.Formater(string(tplcontent))
 				if err != nil {
 					log.Errorf("%v", err)
-					return err
+					source = string(tplcontent)
 				}
 			} else {
 				source = string(tplcontent)
