@@ -11,7 +11,7 @@ import (
 	"reflect"
 	"strconv"
 
-	"github.com/go-xorm/core"
+	"xorm.io/core"
 )
 
 // Get retrieve one record from database, bean's non-empty fields
@@ -24,6 +24,10 @@ func (session *Session) Get(bean interface{}) (bool, error) {
 }
 
 func (session *Session) get(bean interface{}) (bool, error) {
+	if session.statement.lastError != nil {
+		return false, session.statement.lastError
+	}
+
 	beanValue := reflect.ValueOf(bean)
 	if beanValue.Kind() != reflect.Ptr {
 		return false, errors.New("needs a pointer to a value")
@@ -58,7 +62,7 @@ func (session *Session) get(bean interface{}) (bool, error) {
 	table := session.statement.RefTable
 
 	if session.canCache() && beanValue.Elem().Kind() == reflect.Struct {
-		if cacher := session.engine.getCacher(table.Name); cacher != nil &&
+		if cacher := session.engine.getCacher(session.statement.TableName()); cacher != nil &&
 			!session.statement.unscoped {
 			has, err := session.cacheGet(bean, sqlStr, args...)
 			if err != ErrCacheFailed {

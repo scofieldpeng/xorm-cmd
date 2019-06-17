@@ -8,7 +8,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/go-xorm/core"
+	"xorm.io/core"
 )
 
 var (

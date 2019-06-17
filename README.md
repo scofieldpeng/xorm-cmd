@@ -7,9 +7,9 @@ xorm tools is a set of  tools for database operation.
 
 ## Source Install
 
-`go get gitea.com/xorm/cmd/xorm`
+`go get xorm.io/cmd/xorm`
 
-and you should install the depends below:
+and you will install the depends below:
 
 * github.com/go-xorm/xorm
 
