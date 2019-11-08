@@ -11,7 +11,7 @@ xorm 是一组数据库操作命令行工具。
 
 执行以上命令会安装如下依赖:
 
-* github.com/go-xorm/xorm
+* xorm.io/xorm
 
 * Mysql: [github.com/go-sql-driver/mysql](https://github.com/go-sql-driver/mysql)
 

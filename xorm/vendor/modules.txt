@@ -1,12 +1,10 @@
 # cloud.google.com/go v0.37.4
 cloud.google.com/go/civil
-# github.com/denisenkom/go-mssqldb v0.0.0-20190515213511-eb9f6a1743f3
+# github.com/denisenkom/go-mssqldb v0.0.0-20190707035753-2be1aa521ff4
 github.com/denisenkom/go-mssqldb
 github.com/denisenkom/go-mssqldb/internal/cp
 # github.com/go-sql-driver/mysql v1.4.1
 github.com/go-sql-driver/mysql
-# github.com/go-xorm/xorm v0.7.3-0.20190617053813-c9b14f948700
-github.com/go-xorm/xorm
 # github.com/lib/pq v1.1.1
 github.com/lib/pq
 github.com/lib/pq/oid
@@ -21,9 +19,11 @@ github.com/ziutek/mymysql/mysql
 github.com/ziutek/mymysql/native
 # golang.org/x/crypto v0.0.0-20190325154230-a5d413f7728c
 golang.org/x/crypto/md4
-# google.golang.org/appengine v1.4.0
+# google.golang.org/appengine v1.6.0
 google.golang.org/appengine/cloudsql
-# xorm.io/builder v0.3.5
+# xorm.io/builder v0.3.6
 xorm.io/builder
-# xorm.io/core v0.6.3
+# xorm.io/core v0.7.2
 xorm.io/core
+# xorm.io/xorm v0.8.0
+xorm.io/xorm
