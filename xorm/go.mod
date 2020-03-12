@@ -1,4 +1,4 @@
-module github.com/scofieldpeng/xorm-cmd
+module github.com/scofieldpeng/xorm-cmd/xorm
 
 go 1.13
 
